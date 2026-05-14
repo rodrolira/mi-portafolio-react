@@ -25,6 +25,8 @@
     border-radius: 15px;
     overflow: hidden;
     transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
   }
   
   .projectCard:hover {
@@ -32,8 +34,29 @@
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
   }
   
+  .projectImage {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background: #e0e7ff;
+  }
+
+  .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .projectImage:hover .image {
+    transform: scale(1.05);
+  }
+  
   .projectInfo {
     padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
   }
   
   .projectInfo h3 {
@@ -60,20 +83,71 @@
     border-radius: 12px;
     font-size: 0.8em;
   }
+
+  .projectLinks {
+    display: flex;
+    gap: 12px;
+    margin-top: auto;
+    flex-wrap: wrap;
+    justify-content: center;  
+  }
   
   .btn {
-    display: inline-block;
     background: linear-gradient(135deg, #667eea, #764ba2);
     color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 25px;
-    margin-top: 10px;
-    transition: transform 0.3s;
-    border: none;
-    cursor: pointer;
   }
   
   .btn:hover {
     transform: translateY(-2px);
+    background: linear-gradient(135deg, #764ba2, #667eea);
+
+  }
+
+  .btnGithub {
+    display: inline-block;
+    color: white;
+    background: #24292e;
+  }
+
+  .btnGithub:hover {
+    transform: translateY(-2px);
+    background: #2c3e50;
+  }
+  
+  .btn, .btnGithub {
+    display: inline-block;  /* ← Cambiar de 'inline-block' a 'inline-flex' o mantener */
+    padding: 10px 24px;     /* ← Ajusta el padding para que no sean tan anchos */
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 10px;
+    transition: transform 0.3s, background 0.3s;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: center;
+    width: auto;            /* ← Importante: que no sea 100% */
+    min-width: 120px;       /* ← Ancho mínimo para que sean consistentes */
+  }
+  /* Responsive */
+  @media (max-width: 768px) {
+    .projectImage {
+      height: 150px;
+    }
+    .btn, .btnGithub {
+      padding: 8px 16px;
+      font-size: 0.85rem;
+      min-width: 100px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .projectLinks {
+      flex-direction: column;  /* Los botones se apilan verticalmente */
+    }
+    
+    .btn, .btnGithub {
+      width: 100%;  /* En móvil sí ocupan todo el ancho */
+      text-align: center;
+    }
   }
