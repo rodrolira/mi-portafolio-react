@@ -1,0 +1,29 @@
+.education {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .education h2 {
+    color: #667eea;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    border-left: 4px solid #667eea;
+    padding-left: 15px;
+  }
+  
+  .educationItem {
+    margin-bottom: 20px;
+  }
+  
+  .educationItem h3 {
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .date {
+    color: #999;
+    font-size: 0.9em;
+  }

@@ -1,0 +1,28 @@
+.footer {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .footer p {
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  .socialLinks {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .socialLinks a {
+    color: #667eea;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .socialLinks a:hover {
+    color: #764ba2;
+  }
