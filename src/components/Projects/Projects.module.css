@@ -39,6 +39,30 @@
     height: 200px;
     overflow: hidden;
     background: #e0e7ff;
+    position: relative;
+  }
+
+  .projectImageLink {
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .projectImageLink:hover .image {
+    transform: scale(1.05);
+  }
+
+  .projectImageLink:hover .projectImage::after {
+    content: '🔗';
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    z-index: 1;
   }
 
   .image {
@@ -104,7 +128,6 @@
   }
 
   .btnGithub {
-    display: inline-block;
     color: white;
     background: #24292e;
   }

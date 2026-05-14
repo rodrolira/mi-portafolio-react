@@ -6,9 +6,11 @@ const ProjectCard = ({ title, description, tags, link, github, image }) => {
   return (
     <div className={styles.projectCard}>
       {image && (
-        <div className={styles.projectCard}>
-          <img src={image} alt={title} className={styles.image} />
-        </div>
+        <a href={link} target="_blank" rel="noopener noreferrer" className={styles.projectImageLink}>
+          <div className={styles.projectImage}>
+            <img src={image} alt={title} className={styles.image} />
+          </div>
+        </a>
       )}
 
       <div className={styles.projectInfo}>
