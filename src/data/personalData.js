@@ -2,7 +2,7 @@ import atklPreview from '../assets/projects/atkl-preview.webp'
 
 export const personalData = {
     name: "Rodrigo Lira Pizarro",
-    title: "Desarrolladora Full Stack | Apasionado por la tecnología",
+    title: "Desarrollador Full Stack | Apasionado por la tecnología",
     email: "rlirapizarro@gmail.com",
     phone: "+56 9 9297 0804",
     location: "Madrid, España",
