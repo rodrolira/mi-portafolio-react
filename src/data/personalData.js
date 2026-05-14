@@ -5,7 +5,7 @@ export const personalData = {
     title: "Desarrollador Full Stack | Apasionado por la tecnología",
     email: "rlirapizarro@gmail.com",
     phone: "+56 9 9297 0804",
-    location: "Madrid, España",
+    location: "Rancagua, Chile",
     github: "https://github.com/rodrolira",
     about: "Desarrollador apasionado con 3 años de experiencia en creación de aplicaciones web. Me encanta aprender nuevas tecnologías y resolver problemas complejos. Busco oportunidades para crecer profesionalmente y aportar valor a proyectos innovadores.",
     
@@ -23,15 +23,15 @@ export const personalData = {
         { name: "Ruby on Rails", level: 60 },
       ],
       backend: [
-        { name: "Python", level: 85 },
+        { name: "Python", level: 40 },
         { name: "Node.js", level: 70 },
         { name: "Ruby on Rails", level: 60 },
       ],
       databases: [
-        { name: "MySQL", level: 75 },
+        { name: "MySQL", level: 80 },
         { name: "MongoDB", level: 70 },
         { name: "Git/GitHub", level: 80 },
-        { name: "PostgreSQL", level: 70 },
+        { name: "PostgreSQL", level: 90 },
       ]
     },
     
