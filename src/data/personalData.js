@@ -1,6 +1,7 @@
 import atklPreview from "../assets/projects/atkl-preview.webp";
-import remoteWorkCertification from "../assets/certifications/certificado-remote-work.pdf";
-import diseñoWeb from "../assets/certifications/certificado-diseño-programacion-web.pdf";
+import pdfIcon from '../assets/certifications/pdf-icon.png' // Opcional: descarga un ícono PDF
+import { getAssetPath } from '../utils/paths'
+import jsCertImg from "../assets/certifications/certificado-js-html-css-nodejs.jpg";
 
 export const personalData = {
   name: "Rodrigo Lira Pizarro",
@@ -68,12 +69,69 @@ export const personalData = {
   ],
 
   languages: ["Español (Nativo)", "Inglés (B2 - Intermedio)"],
-  certifications: [{
-    name: "Remote Work Professional Certification RWPC - CertiProf",
-    institution: "CertiProf",
-    date: "2026",
-    image: remoteWorkCertification,
-    type: "pdf"
-  },
-],
+  certifications: [
+    {
+      name: "JavaScript, HTML, CSS y Node.js",
+      image: jsCertImg, // ✅ Imagen JPG real
+      pdfFile: getAssetPath("/certifications/certificado-js-html-css-nodejs.jpg"),
+      type: "image",
+      category: "Desarrollo Web",
+    },
+    {
+      name: "Introducción a SQL",
+      image: pdfIcon, // 📄 Ícono de PDF
+      pdfFile: getAssetPath("/certifications/certificado-introduccion-sql.pdf"),
+      type: "pdf",
+      category: "Bases de Datos",
+    },
+    {
+      name: "SQL Intermedio",
+      image: pdfIcon,
+      pdfFile: getAssetPath("/certifications/certificado-intermedio-sql.pdf"),
+      type: "pdf",
+      category: "Bases de Datos",
+    },
+    {
+      name: "Programación en JavaScript",
+      image: pdfIcon,
+      pdfFile: getAssetPath("/certifications/certificado-programacion-js.pdf"),
+      type: "pdf",
+      category: "Desarrollo Web",
+    },
+    {
+      name: "Remote Work - Trabajo Remoto",
+      image: pdfIcon,
+      pdfFile: getAssetPath("/certifications/certificado-remote-work.pdf"),
+      type: "pdf",
+      category: "Habilidades Blandas",
+    },
+    {
+      name: "WordPress",
+      image: pdfIcon,
+      pdfFile: getAssetPath("/certifications/certificado-wordpress.pdf"),
+      type: "pdf",
+      category: "CMS",
+    },
+    {
+      name: "Diseño y Programación Web",
+      image: pdfIcon,
+      pdfFile: getAssetPath("/certifications/certificado-diseño-programacion-web.pdf"),
+      type: "pdf",
+      category: "Diseño Web",
+    },
+    {
+      name: "Diseño Web con HTML y CSS",
+      image: pdfIcon,
+      pdfFile: getAssetPath("/certifications/certificado-diseño-web-html-css.pdf"),
+      type: "pdf",
+      category: "Diseño Web",
+    },
+    {
+      name: "Introducción a la Ciberseguridad",
+      image: null,
+      pdfFile: getAssetPath("/certifications/certificado-introduccion-ciberseguridad.pdf"),
+      type: "pdf",
+      category: "Seguridad",
+    },
+  ],
 };
