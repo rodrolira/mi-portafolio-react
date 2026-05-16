@@ -7,7 +7,7 @@ const About = () => {
   return (
     <section id="sobre-mí" className={`${styles.about} section`}>
       <h2>Sobre mí</h2>
-      <p>{personalData.about}</p>
+      <p dangerouslySetInnerHTML={{ __html: personalData.about }} />
     </section>
   )
 }
